@@ -683,7 +683,7 @@ function sendEmail ($messageid,$email,$hash,$htmlpref = 0,$rssitems = array(),$f
   # check that the HTML message as proper <head> </head> and <body> </body> tags
   # some readers fail when it doesn't
   if (!preg_match("#<body.*</body>#ims",$htmlmessage)) {
-    $htmlmessage = '<body>'.$htmlmessage.'</body>';
+    $htmlmessage = '<body dir="rtl">'.$htmlmessage.'</body>';
   }
   if (!preg_match("#<head.*</head>#ims",$htmlmessage)) {
     if (!$adddefaultstyle) {
