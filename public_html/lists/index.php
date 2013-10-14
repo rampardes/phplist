@@ -1,3 +1,4 @@
+<html dir="rtl" lang="he">
 <?php
 
 ob_start();
